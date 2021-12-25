@@ -70,7 +70,6 @@
   align-items: center;
   justify-content: center;
   flex-wrap: wrap;
-  max-width: 95vw;
 }
 
 .card {
@@ -106,6 +105,24 @@
 .logo {
   height: 1em;
   margin-left: 0.5rem;
+}
+
+.arrow {
+  font-size: 200px;
+  align-self: center;
+  color: #0070f3;
+  transition: color 0.15s ease, border-color 0.15s ease;
+  border: none;
+  background-color: #fff;
+}
+
+.arrow:disabled{
+  opacity: 50%;
+}
+
+.content {
+  display: flex;
+  flex-direction: row;
 }
 
 @media (max-width: 600px) {
