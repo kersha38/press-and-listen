@@ -2,7 +2,7 @@ import Head from "next/head";
 import Image from "next/image";
 import React, { useEffect, useRef } from "react";
 import styles from "../styles/Home.module.css";
-import { botones } from "./botones.js";
+import { botones } from "./api/botones.js";
 
 function Boton(params) {
   const { boton } = params;
