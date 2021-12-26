@@ -82,6 +82,7 @@
   border-radius: 10px;
   transition: color 0.15s ease, border-color 0.15s ease;
   max-width: 300px;
+  max-height: 200px;
 }
 
 .card:hover,
@@ -108,7 +109,7 @@
 }
 
 .arrow {
-  font-size: 200px;
+  font-size: 100px;
   align-self: center;
   color: #0070f3;
   transition: color 0.15s ease, border-color 0.15s ease;

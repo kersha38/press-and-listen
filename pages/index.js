@@ -19,7 +19,7 @@ function Boton(params) {
 
   return (
     <a className={styles.card} onClick={() => setPlay(true)}>
-      <img src={boton.imagen} alt={boton.descripcion} width="200vw" />
+      <Image src={boton.imagen} alt={boton.descripcion} width={200} height={100} objectFit="contain"/>
       <audio ref={audioRef}>
         <source src={boton.sonido} type="audio/mpeg" />
         Your browser does not support the audio element.
