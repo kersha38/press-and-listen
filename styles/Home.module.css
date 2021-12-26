@@ -67,7 +67,7 @@
 
 .grid {
   display: flex;
-  align-items: center;
+  align-items: flex-end;
   justify-content: center;
   flex-wrap: wrap;
 }
@@ -113,7 +113,7 @@
   color: #0070f3;
   transition: color 0.15s ease, border-color 0.15s ease;
   border: none;
-  background-color: #fff;
+  background-color: #0000;
 }
 
 .arrow:disabled{
