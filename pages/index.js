@@ -19,7 +19,13 @@ function Boton(params) {
 
   return (
     <a className={styles.card} onClick={() => setPlay(true)}>
-      <Image src={boton.imagen} alt={boton.descripcion} width={200} height={100} objectFit="contain"/>
+      <Image
+        src={boton.imagen}
+        alt={boton.descripcion}
+        width={300}
+        height={200}
+        objectFit="contain"
+      />
       <audio ref={audioRef}>
         <source src={boton.sonido} type="audio/mpeg" />
         Your browser does not support the audio element.
@@ -42,9 +48,18 @@ export default function Home() {
 
   return (
     <div className={styles.container}>
-      <Head>
-        <title>Sonido de nombres</title>
-      </Head>
+      <title>Sonido de nombres</title>
+      <div className={styles.titleCont}>
+        <h1 className={styles.title}>Toca una imagen</h1>
+        <Image
+          alt="pocoyo indicando"
+          src="/imagen/pocoyo.png"
+          width="50"
+          height="50"
+          objectFit="contain"
+          className={styles.pocoyo}
+        />
+      </div>
       <div className={styles.content}>
         <button
           className={styles.arrow}
@@ -54,7 +69,6 @@ export default function Home() {
           &#11013;
         </button>
         <main className={styles.main}>
-          <h1 className={styles.title}>Toca una imagen &#128071;&#127996;</h1>
           <div className={styles.grid}>
             {botonesSeleccionados.map((boton) => (
               <Boton boton={boton} key={boton.descripcion} />
@@ -64,7 +78,7 @@ export default function Home() {
         <button
           className={styles.arrow}
           onClick={() => setPage(page + 1)}
-          disabled={page >= (botones.length / shownPages) - 1}
+          disabled={page >= botones.length / shownPages - 1}
         >
           &#10145;
         </button>
